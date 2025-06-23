@@ -17,10 +17,11 @@ Just open index.html in any modern browser. No server needed.
 
 4. **Project Structure:**
 Speech-to-Text
-├── index.html      # The main web page
-├── style.css       # Styles for the page
-├── script.js       # Logic for speech recognition using Deepgram
-└── README.md       # This file
+
+├── index.html      ( main web page )
+├── style.css       ( Styles for the page )
+├── script.js       ( Logic for speech recognition using Deepgram )
+└── README.md       ( This file )
 
 
 **Notes:** 
