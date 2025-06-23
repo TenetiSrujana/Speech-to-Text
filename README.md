@@ -17,12 +17,12 @@ Just open index.html in any modern browser. No server needed.
 
 4. **Project Structure:**
 Speech-to-Text
-
 ├── index.html      ( main web page )
 ├── style.css       ( Styles for the page )
 ├── script.js       ( Logic for speech recognition using Deepgram )
 └── README.md       ( This file )
 
+5. **Image Preview:** <img width="1470" alt="Screenshot 2025-06-23 at 8 58 40 AM" src="https://github.com/user-attachments/assets/7e7d2b8c-16a8-452c-9cf3-a5782b61caf8" />
 
 **Notes:** 
 . This project uses Deepgram's WebSocket API for real-time transcription.
