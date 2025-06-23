@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Speech Recognition Vibes</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+  }
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 15px #00ffcc88;
+  }
+  h1 {
+    margin-bottom: 0.3em;
+  }
+  button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: none;
+    background: #00ffcc;
+    color: #121212;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #00d1aa;
+  }
+  button.recording {
+    background: #ff4c4c;
+    color: white;
+  }
+  textarea {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #121212;
+    color: #eee;
+    resize: none;
+  }
+  .status {
+    margin-top: 15px;
+    font-style: italic;
+    color: #aaa;
+  }
+  .buttons-row {
+    margin-top: 10px;
+  }
+  #wordCountDisplay {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #00ffcc;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Speak Your Mind</h1>
+    <p>Click the button and let the magic happen</p>
+    <button id="recordButton">Start Listening</button>
+
+    <div class="output-container">
+      <h2>Transcript</h2>
+      <textarea id="transcript" rows="8" readonly placeholder="Your words will appear here..."></textarea>
+      <div class="buttons-row">
+        <button id="clearButton">Clear Transcript</button>
+        <button id="wordCountButton">Word Count</button>
+      </div>
+      <div id="wordCountDisplay" class="status"></div>
+    </div>
+
+    <div id="status" class="status">Ready</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
